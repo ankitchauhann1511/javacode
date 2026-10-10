@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 public class LinkedList {
     public static void main(String[] args) {
        
@@ -55,11 +57,22 @@ public class LinkedList {
             System.out.print(print.val + " ");
             print = print.address;
         }
-
+       Nodee nc=new Nodee(120,null);
+       System.out.println(nc.val);
     }
 
     public static class Node{
         int val;
         Node address;
+
     }
+        public static class Nodee{
+        int val;
+        Nodee address;
+        public Nodee(int val , Nodee ad){
+            this.val=val;
+            this.address=ad;
+        }
+    }
+    
 }
